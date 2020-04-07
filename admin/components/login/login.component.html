@@ -1,0 +1,24 @@
+<div class="loginContainer">
+
+
+		        <form [formGroup]="authform" class="formlayout" (submit)="challenge()">
+		<h2 class="Head_layout">
+			ยินดีต้อนรับ<br>
+			ใส่รหัสผ่านด้วย
+		</h2>
+		<h3 class="Head_layout">
+			{{message}}	
+		</h3>
+		<mat-form-field class="inputfield">
+			<input matInput placeholder="ล็อกอิน" formControlName="username" >
+		</mat-form-field>
+			<br>
+			<!-- phone -->
+			<mat-form-field class="inputfield">
+				<input matInput placeholder="รหัสผ่าน" type="password" formControlName="password" >
+			</mat-form-field>
+				<br>
+				                <button type="submit" [disabled]="!authform.valid">Login</button>
+
+	</form>
+</div>

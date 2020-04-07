@@ -1,0 +1,75 @@
+<div class="container">
+	<h3>Invoice Receipt <br>
+	Receipt
+	</h3>	
+		<div class="invoceinfo">
+		<br>
+		<i>
+			Invoice No: {{rsinvoice.invoiceid}} <br>
+			date : {{rsinvoice.date}}
+		</i>
+		</div>
+	<div class="from">
+	<br>
+	<i> {{rsinvoice.c_companyname}} </i>
+	<br>
+	<i> {{rsinvoice.c_address}} </i>
+	<br>
+	<i> {{rsinvoice.c_district}} </i>
+	<br>
+	<i> {{rsinvoice.c_province}} </i>
+	<br>
+	<i> {{rsinvoice.c_postal_code}} </i>
+	<br>
+	</div>
+<div class="bill_to">
+	<br>
+	<i>{{rsinvoice.companyname}}</i>
+	<br>
+	<i> {{rsinvoice.fullname}} </i>
+	<br>
+	<i> {{rsinvoice.address}} </i>
+	<br>
+	<i> {{rsinvoice.district}} </i>
+	<br>
+	<i> {{rsinvoice.province}} </i>
+	<br>
+	<i> {{rsinvoice.postal_code}} </i>
+</div>
+
+<!-- Middle section  -->
+<div class="tablesection">
+	<br>
+	<table>
+		<thead>
+			<tr>
+				<th> No </th>
+				<th> description </th>
+				<th> quantity </th>
+				<th> price </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let items of rsinvoice.rsitems; let i = index">
+				<td class="row_items"> {{i+1}} </td>
+				<td> {{items.description}} </td>
+				<td class="row_quantity">{{items.quantity}}</td>
+				<td class="row_price">{{items.price}}</td>
+			</tr>
+		</tbody>
+		<thead>
+			<tr>
+				<th colspan="2">{{rsinvoice.totalinthaiword}}</th>
+				<th class="totallayout">total</th>
+				<th>{{rsinvoice.total}}</th>
+			</tr>
+		</thead>
+		
+	</table>
+	<br>	
+</div>
+
+
+	<!--  bottom section -->
+</div>
+

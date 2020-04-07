@@ -1,0 +1,30 @@
+
+<div class="container">
+	<br>
+<p class="contentsection"><font size="14">find customer</font></p>
+<mat-form-field class="inputfield" >
+<input matInput placeholder="phone number" #phone (input)="searchcustomer(phone.value)">
+		</mat-form-field>
+<div class="contentsection">
+
+<table>
+<thead>
+<tr colspan="2">
+</tr>
+<tr> 
+<th> full name </th>
+<th> phone number </th>
+</tr>
+</thead>
+<tbody *ngFor="let c of customerlist$ | async">
+<td> {{c.fullname}} </td>
+<td> {{c.phonenumber}} </td>
+ <td> <button mat-raised-button routerLink="/admin/createinvoice/customer/{{c.customerid}}">create invoice</button></td>
+ </tbody>
+</table>
+</div>
+
+</div>
+<video data-dashjs-player autoplay src="http://localhost:5005/api/video/gargantiacourse/gargantia.mpd" type="application/dash-xml" controls></video>
+
+

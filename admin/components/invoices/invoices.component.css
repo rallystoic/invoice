@@ -1,0 +1,21 @@
+.container{
+display:grid;
+grid-template-columns: repeat(12,1fr);
+
+}
+
+table{
+width: 100%;
+border-collapse: collapse;
+border: 1px solid black;
+}
+th,td {
+text-align:center;
+border: 1px solid black;
+}
+th {
+	background-color:gray;
+}
+.inner_layout {
+grid-column: 3/11;
+}

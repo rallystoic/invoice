@@ -1,0 +1,18 @@
+.container {
+}
+.customerform {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+.cpname {
+	grid-column: 3/6;
+}
+.inputfield{
+	grid-column: 3/11;
+}
+
+.send{
+	grid-column:3/4;
+}
+
+

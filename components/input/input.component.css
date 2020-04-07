@@ -1,0 +1,54 @@
+.container {
+display:grid;
+grid-template-columns: repeat(12,1fr);
+border: 1px solid black;
+}
+strong {
+text-align:center;
+}
+
+.companyref {
+grid-column:2/5;
+}
+
+.invoceinfo {
+grid-column:8/12;
+justify-self:right;
+}
+
+
+.from {
+grid-column:9/12;
+text-align:right;
+font-size: 100%;
+word-break: break-word;
+}
+
+.bill_to {
+	grid-column:2/12;
+}
+
+
+/* Start table */
+.tablesection {
+grid-column:2/12;
+}
+.tablesection  th {
+	background-color: silver;
+}
+
+table{
+width: 100%;
+}
+td {
+	word-break: break-word;
+}
+
+.row_items,.row_quantity,.row_price {
+text-align: center;
+}
+
+/* end table */
+
+
+

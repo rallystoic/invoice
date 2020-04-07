@@ -1,0 +1,15 @@
+.loginContainer{
+	display:grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows:repeat(3,1fr);
+}
+
+
+.formlayout {
+	grid-column:4/8;
+	grid-row: 2/3;
+}
+
+h3 {
+	color: red;
+}

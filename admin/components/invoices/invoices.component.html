@@ -1,0 +1,30 @@
+<div class="container">
+	<div class="inner_layout">
+		<mat-paginator [length]="total.total"
+     [pageSizeOptions]="[8]"
+     [pageSize]="8"
+     (page)="getpage($event.pageIndex)">
+		</mat-paginator>
+	</div>
+	<div class="inner_layout">
+		<table>
+			<thead>
+				<tr>
+					<th>number </th>
+					<th>total</th>
+					<th>date</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody *ngFor="let in of rsinvoice$ | async">
+				<td>{{in.invoiceid}}</td>
+				<td>{{in.amount}}</td>
+				<td>{{in.date}}</td>
+				<td><button mat-button routerLink="/admin/invoicedetail/{{in.id}}">Detail</button></td>
+			</tbody>
+
+		</table>
+	</div>
+
+
+</div>

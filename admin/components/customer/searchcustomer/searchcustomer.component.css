@@ -1,0 +1,40 @@
+.container {
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+}
+.font{
+size: 150px;
+}
+p {
+	    font-family: 'Kanit', sans-serif;
+}
+
+i{
+grid-column: 3/11;
+}
+.searchsection {
+	background: blue;
+}
+
+.inputfield {
+grid-column: 3/6;
+}
+
+.contentsection {
+grid-column: 3/11;
+display: grid;
+}
+.card {
+	background-color: red;
+}
+
+table {
+width: 100%;
+}
+td {
+	text-align: center;
+	    font-family: 'Kanit', sans-serif;
+}
+button{
+	    font-family: 'Kanit', sans-serif;
+}

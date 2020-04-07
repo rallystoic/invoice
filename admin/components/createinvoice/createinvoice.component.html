@@ -1,0 +1,113 @@
+
+		<br>
+		<div class="container">
+		<strong class="accordion"> fil data  </strong>
+		<br>
+			<mat-accordion class="accordion">
+				<mat-expansion-panel>
+					<mat-expansion-panel-header>
+						<mat-panel-title>
+							  description : 1
+						</mat-panel-title>
+					</mat-expansion-panel-header>
+					<textarea matInput  placeholder="description" [(ngModel)]="formstrarr[0]">
+					</textarea>
+
+					<br>
+					<mat-form-field class="quantity_layout">
+						<input matInput placeholder="quantity"   [(ngModel)]="formstrarr[1]">
+					</mat-form-field>
+					<mat-form-field >
+						<input matInput placeholder="price" [(ngModel)]="formstrarr[2]">
+					</mat-form-field>
+				</mat-expansion-panel>
+			</mat-accordion>
+			<!-- Second item list -->
+			<mat-accordion class="accordion">
+				<mat-expansion-panel>
+					<mat-expansion-panel-header>
+						<mat-panel-title>
+							  description : 2
+						</mat-panel-title>
+					</mat-expansion-panel-header>
+					<textarea matInput  placeholder="description" [(ngModel)]="formstrarr2[0]">
+					</textarea>
+
+					<br>
+					<mat-form-field class="quantity_layout">
+						<input matInput placeholder="quantity"   [(ngModel)]="formstrarr2[1]">
+					</mat-form-field>
+					<mat-form-field >
+						<input matInput placeholder="price" [(ngModel)]="formstrarr2[2]">
+					</mat-form-field>
+				</mat-expansion-panel>
+			</mat-accordion>
+			<!-- Third item list -->		
+			<mat-accordion class="accordion">
+				<mat-expansion-panel>
+					<mat-expansion-panel-header>
+						<mat-panel-title>
+							  description : 3
+						</mat-panel-title>
+					</mat-expansion-panel-header>
+					<textarea matInput  placeholder="description" [(ngModel)]="formstrarr3[0]">
+					</textarea>
+
+					<br>
+					<mat-form-field class="quantity_layout">
+						<input matInput placeholder="quantity"   [(ngModel)]="formstrarr3[1]">
+					</mat-form-field>
+					<mat-form-field >
+						<input matInput placeholder="price" [(ngModel)]="formstrarr3[2]">
+					</mat-form-field>
+				</mat-expansion-panel>
+			</mat-accordion>
+			<!-- fourth item list -->
+			<mat-accordion class="accordion">
+				<mat-expansion-panel>
+					<mat-expansion-panel-header>
+						<mat-panel-title>
+							  description : 4
+						</mat-panel-title>
+					</mat-expansion-panel-header>
+					<textarea matInput  placeholder="description" [(ngModel)]="formstrarr4[0]">
+					</textarea>
+
+					<br>
+					<mat-form-field class="quantity_layout">
+						<input matInput placeholder="quantity"   [(ngModel)]="formstrarr4[1]">
+					</mat-form-field>
+					<mat-form-field >
+						<input matInput placeholder="price" [(ngModel)]="formstrarr4[2]">
+					</mat-form-field>
+				</mat-expansion-panel>
+			</mat-accordion>
+			<mat-accordion class="accordion">
+				<mat-expansion-panel>
+					<mat-expansion-panel-header>
+						<mat-panel-title>
+							  description : 5
+						</mat-panel-title>
+					</mat-expansion-panel-header>
+					<textarea matInput  placeholder="description" [(ngModel)]="formstrarr5[0]">
+					</textarea>
+
+					<br>
+					<mat-form-field class="quantity_layout">
+						<input matInput placeholder="quantity"   [(ngModel)]="formstrarr5[1]">
+					</mat-form-field>
+					<mat-form-field >
+						<input matInput placeholder="price" [(ngModel)]="formstrarr5[2]">
+					</mat-form-field>
+				</mat-expansion-panel>
+			</mat-accordion>
+
+			
+			<div mat-dialog-actions class="creatbtn">
+				<br>
+  <button mat-raised-button (click)="pushelementtoobj()" class="">Create !</button>
+			</div>
+		</div>
+
+
+

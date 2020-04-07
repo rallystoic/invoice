@@ -1,0 +1,33 @@
+.container {
+display:grid;
+grid-template-columns: repeat(12, 1fr);
+}
+
+
+.pos{
+grid-column: 3/11;
+justify-self:stretch;
+}
+
+.pos_innerlayout {
+display:grid;
+grid-template-columns: repeat(8, 1fr);
+}
+
+.accordion {
+	grid-column: 3/11;
+
+}
+.creatbtn{
+grid-column:3/4;
+}
+.description_layout {
+	grid-column:2/6;
+}
+.quantity_layout {
+	grid-column:6/7;
+}
+
+.price_layout {
+	grid-column: 7/9;
+}
